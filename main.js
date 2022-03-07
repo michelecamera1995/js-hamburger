@@ -3,9 +3,9 @@ console.log("JS-OK")
 
 const icon = document.querySelector('#header-right a');
 
-const hiddenmenu = document.getElementsByClassName("hamburger-menu");
+const hiddenmenu = document.getElementsByClassName('hamburger-menu');
 
-icon.addEventListener = ('click', function () {
+icon.addEventListener('click', function () {
 
     console.log('pulsante cliccato');
 
