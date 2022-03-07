@@ -1,11 +1,13 @@
 
 console.log("JS-OK")
 
-const icon = document.querySelector('#header-right a');
+const hamiopen = document.querySelector('.fa-bars');
 
-const hiddenmenu = document.getElementsByClassName('hamburger-menu');
+const hiddenmenu = document.querySelector('.hamburger-menu');
 
-icon.addEventListener('click', function () {
+const hamiclose = document.querySelector('.fa-times');
+
+hamiopen.addEventListener('click', function () {
 
     console.log('pulsante cliccato');
 
@@ -17,3 +19,11 @@ icon.addEventListener('click', function () {
 
 });
 
+hamiclose.addEventListener('click', function () {
+
+    console.log('pulsante cliccato');
+
+    if (hiddenmenu.style.display === "block") {
+        hiddenmenu.style.display = "none";
+    }
+});
